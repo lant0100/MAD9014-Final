@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="themes/finaltheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header">
+            <h3>Do Not Forget!</h3>
+        </div>
+        <div data-role="content">
+            <div>
+                <img src="img/groceries.jpg" alt="img/groceries.jpg">
+            </div>
+                        
+            <div id="intro">
+                <p>Your List Starts Bellow:</p>
+                <p>Type what you need to pick up in the textbox at the bottom of the page and hit the "Add to List" button to make your list!</p>
+                <h3>NOTICE: Tap and Hold an item to remove it!!!</h3>
+            </div>
+            
+            <div>
+                <ul data-role="listview" id="list">
+                    
+                </ul>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <div>
+                    <form>
+                    Pick Up: <input type="text" id="pickup" name="pickup" value="" placeholder="enter your item here">
+                   </form>
+                   <button id="key">Add to List!</button>
+                   <button id="clear">Clear List!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
